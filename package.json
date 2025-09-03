@@ -8,10 +8,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "server": "json-server --watch src/jobs.json --port 8000",
-    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0"
+    "start": "node server.js",
+    "railway:start": "npm run build && npm start"
   },
   "dependencies": {
     "axios": "^1.7.2",
+    "connect-history-api-fallback": "^2.0.0",
+    "express": "^4.18.2",
     "json-server": "^1.0.0-beta.1",
     "primeicons": "^7.0.0",
     "vue": "^3.4.29",
